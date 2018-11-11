@@ -63,7 +63,12 @@ module.exports = {
               // Any image > 8kb would be passed to file-loader to be processed, along with these options.
           }
       }]
-   }]
+   },
+   {
+      // this config allows use of bootsrap glyphicons
+      test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
+      loader: 'url-loader'
+    }]
   },
   devtool: 'eval-source-map',
   // allows source maps in development (just adding this property - no installations)

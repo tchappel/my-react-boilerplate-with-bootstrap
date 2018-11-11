@@ -3,7 +3,7 @@ import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route,  } from 'react-router-dom';
 import './styles/styles.scss';
 
 class App extends Component {
@@ -16,14 +16,21 @@ class App extends Component {
         );
     }
 }
+
+const Error404 = () => {
+    return (
+        <div>Error 404 <br/> Page not found</div>
+    );
+}
  
 const routes = (
     <BrowserRouter>
-      <div>
+      <Switch>
         <Route path="/" component={App} exact={true} />
-      </div>
+        <Route component={Error404} exact={true} />
+      </Switch>
     </BrowserRouter>
 );
-   
+
 
 ReactDOM.render(routes, document.getElementById('app'));

@@ -1,5 +1,6 @@
 # my-react-boilerplate-with-bootstrap
 My PERSONAL React Boilerplate, after studying about **Babel** and **Webpack**:
+* suitable **only for development** (at the moment);
 * it supports **JSX**, **ES6** and **class properties** through **babel** presets and plugins;
 * it supports styling with **SCSS** and **Bootstrap**;
 * import images with webpack url-loader and file-loader;

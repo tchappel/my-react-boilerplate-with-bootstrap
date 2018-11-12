@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+require('./styles.scss');
 
 const Header = () => {
     return ( 
@@ -20,4 +21,3 @@ const Header = () => {
 }
  
 export default Header;
-

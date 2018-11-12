@@ -1,7 +1,4 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 /* Styles imported here override Bootstrap! */
-@import "./components/base";
-
-/*import below stylesheets for your components*/
-@import "./components/Header";
+@import "./override.scss";

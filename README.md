@@ -4,6 +4,28 @@ My PERSONAL React Boilerplate, after studying about **Babel** and **Webpack**:
 * it supports styling with **SCSS** and **Bootstrap**;
 * import images with webpack url-loader and file-loader;
 * **Client-side routing** with **react-router-dom**.
+
+## ABOUT THE PROJECT STRUCTURE
+
+### components
+add here your global components.
+
+### pages
+* add here the components that make up your single pages or "scenes";
+* nest inside a page the components that are used only in that page;
+
+### styles
+this folder is only for:
+* global styles
+* normalization/reset
+* variable and mixins declarations;
+
+### routers
+it is where you can configure client-side routing.
+
+### images
+store here your image assets.
+
 ## TODO
 * adjust source-map settings (still not available);
 * set up test font from googleFonts.
